@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 const validateLicenseKey = async (key: string) => {
-  if (typeof process.env.WHOP_API_KEY !== 'string') return { message: 'Silly developer. You forgot to add the api to this project' }
+  if (typeof process.env.WHOP_API_KEY !== 'string') return { message: 'Silly developer. You forgot to add your WHOP_API_KEY to this project' }
 
   const response = await fetch(`https://api.whop.com/api/v2/memberships/${key}/validate_license`, {
     method: 'POST',
