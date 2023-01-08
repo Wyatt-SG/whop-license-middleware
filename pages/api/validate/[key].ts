@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-const validateLicenseKey = async ({ key }: { key: string; metadata: { [key: string]: string } }) => {
+const validateLicenseKey = async ({ key, metadata }: { key: string; metadata: { [key: string]: string } }) => {
   if (typeof process.env.WHOP_API_KEY !== 'string') return { message: 'Silly developer. You forgot to add your WHOP_API_KEY to this project' }
 
   const response = await fetch(`https://api.whop.com/api/v2/memberships/${key}/validate_license`, {
@@ -11,7 +11,7 @@ const validateLicenseKey = async ({ key }: { key: string; metadata: { [key: stri
         'Authorization': `Bearer ${process.env.WHOP_API_KEY}`
     },
     body: JSON.stringify({ 
-      metadata: "authorization_code"
+      "metadata": metadata
     })
   })
 
@@ -20,7 +20,7 @@ const validateLicenseKey = async ({ key }: { key: string; metadata: { [key: stri
 
 const isKeyString = (key: string | string[] | undefined): key is string => typeof key === 'string'
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -31,9 +31,7 @@ export default function handler(
 
   if (!isKeyString(key)) return res.status(400).json({ message: 'Key is required. /validate/[key]' })
 
-  validateLicenseKey({key: key, metadata: metadata}).then((data) => {
-    console.log(data);
-  })
+  const result = await validateLicenseKey({key: key, metadata: metadata})
 
-  res.status(200).json({ name: 'John Doe' })
+  res.status(200).json(result)
 }
