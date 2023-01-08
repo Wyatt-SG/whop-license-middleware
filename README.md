@@ -16,12 +16,28 @@ POST
 ```
 /api/license/[key]/validate
 ```
+Body:
+```json
+{
+  "metadata": {
+    "anything": "you want"
+  }
+}
+```
 
 Update a key's metadata:
 
 POST
 ```
 /api/license/[key]/update
+```
+Body:
+```json
+{
+  "metadata": {
+    "anything": "you want"
+  }
+}
 ```
 
 Reset a key:
