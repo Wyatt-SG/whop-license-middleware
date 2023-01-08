@@ -6,10 +6,6 @@ A simple to use and deploy api for validating Whop keys
 
 ## Endpoints
 
-API request examples in the [postman folder](https://github.com/Wyatt-SG/whop-license-middleware/blob/main/postman/Whop%20Validation%20Middleware.postman_collection.json)
-
-[How to import a postman collection](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data)
-
 ### Validate a key:
 
 POST
@@ -46,6 +42,10 @@ Body:
   }
 }
 ```
+
+API request examples in the [postman folder](https://github.com/Wyatt-SG/whop-license-middleware/blob/main/postman/Whop%20Validation%20Middleware.postman_collection.json)
+
+[How to import a postman collection](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data)
 
 ## Run locally
 
