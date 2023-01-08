@@ -6,7 +6,7 @@ A simple to use and deploy api for validating Whop keys
 
 ## Endpoints
 
-API usage examples in the postman folder 
+API request examples in the postman folder 
 
 [How to import a postman collection](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data)
 
