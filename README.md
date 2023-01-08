@@ -12,7 +12,7 @@ A simple to use and deploy next api for validating Whop keys
 
 4. Add your Whop API key as a project environment variable and deploy ![Vercel site configure project add environment variable](https://i.imgur.com/k24CU7s.png)
 
-5. You can now use this deployed api for your Whop company!
+5. You can now use this deployed api to securely and simply validate, reset, and update license keys for your Whop company!
 
 ## Run locally
 
