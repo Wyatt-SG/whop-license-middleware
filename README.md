@@ -28,7 +28,7 @@ POST
 /api/license/[key]/reset
 ```
 
-### Update a key's metadata:
+### Update key metadata:
 
 POST
 ```
