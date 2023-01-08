@@ -37,6 +37,26 @@ const validateLicenseKey = async ({
 const isKeyString = (key: string | string[] | undefined): key is string =>
   typeof key === "string";
 
+/**
+ * @swagger
+ * /api/license/{key}/validate:
+ *   post:
+ *     description: Validate a license key
+ *     parameters:
+ *       - in: path
+ *         name: key
+ *         required: true
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               metadata:
+ *                 type: object
+ *                 example: { "anything": "you want" }
+ */
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse

@@ -37,6 +37,26 @@ const updateMetadata = async ({
 const isKeyString = (key: string | string[] | undefined): key is string =>
   typeof key === "string";
 
+/**
+ * @swagger
+ * /api/license/{key}/update:
+ *   post:
+ *     description: Update key metadata
+ *     parameters:
+ *       - in: path
+ *         name: key
+ *         required: true
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               metadata:
+ *                 type: object
+ *                 example: { "anything": "you want" }
+ */
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse

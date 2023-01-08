@@ -31,6 +31,16 @@ const resetKey = async ({ key }: { key: string }) => {
 const isKeyString = (key: string | string[] | undefined): key is string =>
   typeof key === "string";
 
+/**
+ * @swagger
+ * /api/license/{key}/reset:
+ *   post:
+ *     description: Resets key metadata
+ *     parameters:
+ *       - in: path
+ *         name: key
+ *         required: true
+ */
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
