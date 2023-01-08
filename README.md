@@ -36,10 +36,16 @@ POST
 /api/license/[key]/validate
 ```
 
-
 Update a key's metadata:
 
 POST
 ```
-/api/license/[key]/metadata
+/api/license/[key]/update
+```
+
+Reset a key:
+
+POST
+```
+/api/license/[key]/reset
 ```
