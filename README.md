@@ -10,7 +10,7 @@ API usage examples in the postman folder
 
 [How to import a postman collection](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data)
 
-Validate a key:
+### Validate a key:
 
 POST
 ```
@@ -25,7 +25,14 @@ Body:
 }
 ```
 
-Update a key's metadata:
+### Reset a key:
+
+POST
+```
+/api/license/[key]/reset
+```
+
+### Update a key's metadata:
 
 POST
 ```
@@ -38,13 +45,6 @@ Body:
     "anything": "you want"
   }
 }
-```
-
-Reset a key:
-
-POST
-```
-/api/license/[key]/reset
 ```
 
 ## Run locally
