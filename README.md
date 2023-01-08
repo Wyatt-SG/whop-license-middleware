@@ -1,3 +1,7 @@
+## Whop Validator Middleware
+
+A simple to use and deploy next api for validating Whop keys
+
 ## Pre-requisites
 
 A Whop V2 API key from [https://dash.whop.com/settings/developer](https://dash.whop.com/settings/developer) is required
