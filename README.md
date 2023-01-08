@@ -7,9 +7,15 @@ Create a `.env.local` file in the project directory and add your Whop key
 WHOP_API_KEY=xxx
 ```
 
-## Run the project
+## Instal deps and run the project
 
-To start the project:
+1. Install the project dependencies:
+
+```bash
+npm ci
+```
+
+2. Start the project:
 
 ```bash
 npm run dev
