@@ -4,7 +4,7 @@ A simple to use and deploy api for validating Whop keys
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FWyatt-SG%2Fwhop-license-middleware&env=WHOP_API_KEY&envDescription=Whop%20API%20Key%20from%20the%20Whop%20Dashboard&envLink=https%3A%2F%2Fdash.whop.com%2Fsettings%2Fdeveloper)
 
-## Usage
+## Endpoints
 
 API usage examples in the postman folder 
 
