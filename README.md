@@ -2,6 +2,12 @@
 
 A simple to use and deploy next api for validating Whop keys
 
+- Validate
+
+- Reset
+
+- Update metadata
+
 ## Deploy on Vercel
 
 1. Get Whop API key from [Whop Developer Settings](https://dash.whop.com/settings/developer) and save for later
