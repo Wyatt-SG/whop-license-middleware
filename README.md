@@ -20,28 +20,6 @@ A simple to use and deploy api for validating Whop keys
 
 5. You can now use this deployed api to securely and simply validate, reset, and update license keys for your Whop company!
 
-## Run locally
-
-1. Create a `.env.local` file in the project directory and add your [Whop API key](https://dash.whop.com/settings/developer)
-
-```
-WHOP_API_KEY=xxx
-```
-
-2. Install the project dependencies:
-
-```bash
-npm ci
-```
-
-3. Start the project:
-
-```bash
-npm run dev
-```
-
-The project will run at [http://localhost:3000](http://localhost:3000)
-
 ## Usage
 
 API usage examples in the postman folder 
@@ -68,3 +46,25 @@ POST
 ```
 /api/license/[key]/reset
 ```
+
+## Run locally
+
+1. Create a `.env.local` file in the project directory and add your [Whop API key](https://dash.whop.com/settings/developer)
+
+```
+WHOP_API_KEY=xxx
+```
+
+2. Install the project dependencies:
+
+```bash
+npm ci
+```
+
+3. Start the project:
+
+```bash
+npm run dev
+```
+
+The project will run at [http://localhost:3000](http://localhost:3000)
