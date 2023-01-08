@@ -1,25 +1,34 @@
-## Whop Validator Middleware
+## Whop License Middleware
 
 A simple to use and deploy next api for validating Whop keys
 
-## Pre-requisites
+## Deploy on Vercel
 
-A Whop V2 API key from [https://dash.whop.com/settings/developer](https://dash.whop.com/settings/developer) is required
+1. Get Whop API key from [Whop Developer Settings](https://dash.whop.com/settings/developer) and save for later
 
-Create a `.env.local` file in the project directory and add your Whop key
+2. Copy the project ![Github site "Use this template" dropdown- "Create a new repository" selected](https://i.imgur.com/N2ekoK6.png)
+
+3. Login/Sign up for [Vercel](https://vercel.com/#get-started). Create a new project and select the copied repository: ![Vercel site import git repository](https://i.imgur.com/7K2q9IW.png)
+
+4. Add your Whop API key as a project environment variable and deploy ![Vercel site configure project add environment variable](https://i.imgur.com/k24CU7s.png)
+
+5. You can now use this deployed api for your Whop company!
+
+## Run locally
+
+1. Create a `.env.local` file in the project directory and add your [Whop API key](https://dash.whop.com/settings/developer)
+
 ```
 WHOP_API_KEY=xxx
 ```
 
-## Instal deps and run the project
-
-1. Install the project dependencies:
+2. Install the project dependencies:
 
 ```bash
 npm ci
 ```
 
-2. Start the project:
+3. Start the project:
 
 ```bash
 npm run dev
