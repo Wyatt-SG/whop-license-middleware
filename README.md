@@ -19,6 +19,8 @@ The project will run at [http://localhost:3000](http://localhost:3000)
 
 ## Usage
 
+API usage examples in the postman folder. [https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data](How to import a postman collection)
+
 Validate a key:
 
 POST
