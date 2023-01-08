@@ -2,24 +2,6 @@
 
 A simple to use and deploy api for validating Whop keys
 
-- Validate
-
-- Reset
-
-- Update metadata
-
-## Deploy on Vercel
-
-1. Get Whop API key from [Whop Developer Settings](https://dash.whop.com/settings/developer) and save for later
-
-2. Copy the project ![Github site "Use this template" dropdown- "Create a new repository" selected](https://i.imgur.com/N2ekoK6.png)
-
-3. Login/Sign up for [Vercel](https://vercel.com/#get-started). Create a new project and select the copied repository: ![Vercel site import git repository](https://i.imgur.com/7K2q9IW.png)
-
-4. Add your Whop API key as a project environment variable and deploy ![Vercel site configure project add environment variable](https://i.imgur.com/k24CU7s.png)
-
-5. You can now use this deployed api to securely and simply validate, reset, and update license keys for your Whop company!
-
 ## Usage
 
 API usage examples in the postman folder 
@@ -46,6 +28,18 @@ POST
 ```
 /api/license/[key]/reset
 ```
+
+## Deploy on Vercel
+
+1. Get Whop API key from [Whop Developer Settings](https://dash.whop.com/settings/developer) and save for later
+
+2. Copy the project ![Github site "Use this template" dropdown- "Create a new repository" selected](https://i.imgur.com/N2ekoK6.png)
+
+3. Login/Sign up for [Vercel](https://vercel.com/#get-started). Create a new project and select the copied repository: ![Vercel site import git repository](https://i.imgur.com/7K2q9IW.png)
+
+4. Add your Whop API key as a project environment variable and deploy ![Vercel site configure project add environment variable](https://i.imgur.com/k24CU7s.png)
+
+5. You can now use this deployed api to securely and simply validate, reset, and update license keys for your Whop company!
 
 ## Run locally
 
