@@ -33,5 +33,7 @@ export default async function handler(
 
   const result = await validateLicenseKey({key: key, metadata: metadata})
 
+  if (result?.error) return res.status(result?.error?.status || 400).json(result)
+
   res.status(200).json(result)
 }
