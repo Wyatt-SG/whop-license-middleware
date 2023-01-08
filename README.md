@@ -1,6 +1,6 @@
 ## Whop License Middleware
 
-A simple to use and deploy next api for validating Whop keys
+A simple to use and deploy api for validating Whop keys
 
 - Validate
 
