@@ -33,5 +33,13 @@ Validate a key:
 
 POST
 ```
-/api/validate/[key]
+/api/license/[key]/validate
+```
+
+
+Update a key's metadata:
+
+POST
+```
+/api/license/[key]/metadata
 ```

@@ -48,9 +48,7 @@ export default async function handler(
   const { metadata } = req.body;
 
   if (!isKeyString(key))
-    return res
-      .status(400)
-      .json({ message: "Key is required. /validate/[key]" });
+    return res.status(400).json({ message: "Key is required" });
 
   const result = await validateLicenseKey({ key, metadata });
 

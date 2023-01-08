@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "ed14e9cc-beb9-4c16-b782-c0d86167ba53",
+		"name": "Whop Validation Middleware",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Validate License Key",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"metadata\": {\n        \"anything\": \"you want\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/license/S-C7B0F7-B1BA0AF2-7FA9F7W/validate",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"license",
+						"S-C7B0F7-B1BA0AF2-7FA9F7W",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset License Key",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/license/S-C7B0F7-B1BA0AF2-7FA9F7W/reset",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"license",
+						"S-C7B0F7-B1BA0AF2-7FA9F7W",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update License Key Metadata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"metadata\": {\n        \"anything\": \"you want\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/license/S-C7B0F7-B1BA0AF2-7FA9F7W/update",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"license",
+						"S-C7B0F7-B1BA0AF2-7FA9F7W",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000/api"
+		}
+	]
+}
