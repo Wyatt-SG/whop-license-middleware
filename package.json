@@ -1,5 +1,5 @@
 {
-  "name": "whop-validation-middleware",
+  "name": "whop-license-middleware",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,15 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@whop-sdk/core": "^0.0.3",
+    "@whop-sdk/core": "0.0.4-canary.3",
     "next": "13.1.1",
     "next-swagger-doc": "^0.3.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swagger-ui-react": "^4.15.5",
-    "typescript": "4.9.4"
+    "swagger-ui-react": "^4.15.5"
   },
   "devDependencies": {
+    "typescript": "4.9.4",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "@types/node": "18.11.18",
