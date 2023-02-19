@@ -6,6 +6,9 @@ A simple to use and deploy api for validating Whop license keys
 
 ## Endpoints
 
+Swagger documentation:
+https://whop-license-middleware.vercel.app/
+
 ### Validate a key:
 
 POST
