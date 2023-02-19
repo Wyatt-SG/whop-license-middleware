@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import sdk from "@/lib/sdk";
 
 const validateLicenseKey = async ({
   key,
@@ -69,6 +70,17 @@ export default async function handler(
 
   if (!isKeyString(key))
     return res.status(400).json({ message: "Key is required" });
+
+  try {
+    const membership = await sdk.memberships.validateLicense({
+      id: key,
+      validateLicense: { metadata },
+    });
+
+    console.log(membership);
+  } catch (e) {
+    console.log(e);
+  }
 
   const result = await validateLicenseKey({ key, metadata });
 
